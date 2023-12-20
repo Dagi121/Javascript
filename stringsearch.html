@@ -3,16 +3,15 @@
 <body>
 
 <h1>JavaScript Strings</h1>
-<h2>The match() Method</h2>
-
-<p>Perform a global, case-insensitive search for "ain":</p>
+<h2>The startsWith() Method</h2>
 
 <p id="demo"></p>
 
+<p>The startsWith() method is not supported in Internet Explorer.</p>
+
 <script>
-let text = "The rain in SPAIN stays mainly in the plain"; 
-const myArr = text.match(/ain/gi);
-document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = text.startsWith("world", 6);
 </script>
 
 </body>
